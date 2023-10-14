@@ -26,7 +26,7 @@ public int compareTo(Futbolista f) {
 }
 
 @Override
-public abstract boolean jugarConLasManos();
+public boolean jugarConLasManos();
 
 @Override 
 public String toString() {
