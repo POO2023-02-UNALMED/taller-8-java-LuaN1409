@@ -12,7 +12,7 @@ public Jugador(String nombre, int edad, String posicion, short golesMarcados, by
 }
 
 public Jugador() {
-	super("Maradona", "delantero", 30);
+	super("Maradona", 30, "delantero");
 	this.golesMarcados = 289;
 	this.dorsal = 7;
 }
@@ -25,6 +25,7 @@ public int compareTo(Futbolista f) {
 	return diferencia;
 }
 
+@Override
 public abstract boolean jugarConLasManos();
 
 @Override 

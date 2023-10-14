@@ -15,7 +15,7 @@ public Futbolista(String nombre, int edad, String posicion) {
 }
 
 public Futbolista(){
-   this("Maradona", "delantero", 30);
+   this("Maradona", 30, "delantero");
 }
 
 @Override
