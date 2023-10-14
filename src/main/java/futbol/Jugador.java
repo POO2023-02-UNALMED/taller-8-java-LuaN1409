@@ -26,7 +26,9 @@ public int compareTo(Futbolista f) {
 }
 
 @Override
-public boolean jugarConLasManos();
+public boolean jugarConLasManos() {
+	return false;
+}
 
 @Override 
 public String toString() {
