@@ -23,12 +23,10 @@ public int compareTo(Futbolista f) {
 	return Math.abs(this.getEdad() - J.getEdad());
 }
 
-@Override
 public boolean jugarConLasManos() {
 	return false;
 }
 
-@Override 
 public String toString() {
 	
 	return 

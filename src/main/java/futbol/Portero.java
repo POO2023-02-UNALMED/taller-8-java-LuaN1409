@@ -11,6 +11,23 @@ public Portero(String nombre, int edad, String posicion, short golesMarcados, by
 		this.dorsal = dorsal;
 	}
 	
+
+public short getGolesRecibidos() {
+	return golesRecibidos;
+}
+
+public void setGolesRecibidos(short golesRecibidos) {
+	this.golesRecibidos = golesRecibidos;
+}
+
+public byte getDorsal() {
+	return dorsal;
+}
+
+public void setDorsal(byte dorsal) {
+	this.dorsal = dorsal;
+}
+
 @Override
 public boolean jugarConLasManos() {
 	return true;
@@ -24,7 +41,7 @@ public String toString() {
 
 public int compareTo(Futbolista f) {
 	Portero P = (Portero)f;
-	return Math.abs(this.golesRecibidos() - P.golesRecibidos());
+	return Math.abs(this.getGolesRecibidos() - P.getGolesRecibidos());
 
 }
 
