@@ -32,10 +32,7 @@ public boolean equals (Futbolista f) {
 }
 public abstract boolean jugarConLasManos();
 
-public int compareTo(Object f){
-    return 0;		
-    
-}
+public int compareTo(Object f){}
 
 public String getNombre() {
 	return nombre;
