@@ -18,14 +18,14 @@ public boolean jugarConLasManos() {
 	
 @Override
 public String toString() {
-   return System.out.println("El futbolista " + this.getNombre() + "tiene " + this.getEdad() +",y juega de " + this.getPosicion() +
-        " con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos);
+   return 
+   super.toString()+ " con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos;
 }
 
 @Override
 public int compareTo(Futbolista f) {
 	
-	return this.getEdad() - f.getEdad();
+	return Math.abs(this.golesRecibidos() - f.golesRecibidos());
 
 }
 

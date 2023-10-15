@@ -20,9 +20,7 @@ public Jugador() {
 
 @Override
 public int compareTo(Futbolista f) {
-	
-	int diferencia = Math.abs(this.getEdad() - f.getEdad());
-	return diferencia;
+	return Math.abs(this.getEdad() - f.getEdad());
 }
 
 @Override
@@ -33,7 +31,8 @@ public boolean jugarConLasManos() {
 @Override 
 public String toString() {
 	
-	return System.out.println("El futbolista " + this.getNombre() + "tiene " + this.getEdad() +",y juega de " + this.getPosicion());
+	return 
+	super.toString()+ " con el dorsal " + this.dorsal + ". Ha marcado " + this.golesMarcados;
 }
 
 }
