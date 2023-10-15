@@ -28,22 +28,18 @@ public void setDorsal(byte dorsal) {
 	this.dorsal = dorsal;
 }
 
-@Override
 public boolean jugarConLasManos() {
 	return true;
 }
 	
-@Override
 public String toString() {
    return 
    super.toString()+ " con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos;
 }
 
-@Override
 public int compareTo(Object f) {
 	Portero P = (Portero)f;
 	return Math.abs(this.getGolesRecibidos() - P.getGolesRecibidos());
-
 }
 
 }
