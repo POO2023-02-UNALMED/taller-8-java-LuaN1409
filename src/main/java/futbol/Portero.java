@@ -39,6 +39,7 @@ public String toString() {
    super.toString()+ " con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos;
 }
 
+@Override
 public int compareTo(Futbolista f) {
 	Portero P = (Portero)f;
 	return Math.abs(this.getGolesRecibidos() - P.getGolesRecibidos());
