@@ -28,7 +28,6 @@ public boolean equals (Futbolista f) {
 }
 public abstract boolean jugarConLasManos();
 
-@Override
 public int compareTo(Object o){
     return 0;		
 }
