@@ -21,7 +21,7 @@ public Futbolista(){
 @Override
 public String toString() {
 	
-	System.out.println("El futbolista " + nombre + "tiene " + edad +",y juega de " + posicion);
+	return System.out.println("El futbolista " + nombre + "tiene " + edad +",y juega de " + posicion);
 }
 
 public boolean equals (Futbolista f) {

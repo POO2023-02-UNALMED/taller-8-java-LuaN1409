@@ -18,7 +18,7 @@ public boolean jugarConLasManos() {
 	
 @Override
 public String toString() {
-    System.out.println("El futbolista " + this.getNombre() + "tiene " + this.getEdad() +",y juega de " + this.getPosicion() +
+   return System.out.println("El futbolista " + this.getNombre() + "tiene " + this.getEdad() +",y juega de " + this.getPosicion() +
         " con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos);
 }
 
