@@ -18,17 +18,13 @@ public Futbolista(){
    this("Maradona", 30, "delantero");
 }
 
-@Override
 public String toString() {
 	
 	return "El futbolista " + this.nombre + " tiene " + this.edad +", y juega de " + this.posicion;
 }
 
 public boolean equals (Futbolista f) {
-	return this.nombre.equals(f.nombre) &&
-		   this.edad == f.edad &&
-		   this.posicion.equals(f.posicion);
-	
+	return this == f;
 }
 public abstract boolean jugarConLasManos();
 
