@@ -40,7 +40,7 @@ public String toString() {
 }
 
 @Override
-public int compareTo(Futbolista f) {
+public int compareTo(Object f) {
 	Portero P = (Portero)f;
 	return Math.abs(this.getGolesRecibidos() - P.getGolesRecibidos());
 

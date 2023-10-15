@@ -18,7 +18,7 @@ public Jugador() {
 }
 
 @Override
-public int compareTo(Futbolista f) {
+public int compareTo(Object f) {
 	Jugador J = (Jugador)f;
 	return Math.abs(this.getEdad() - J.getEdad());
 }
