@@ -9,7 +9,7 @@ public Jugador(String nombre, int edad, String posicion, short golesMarcados, by
 	super(nombre, edad, posicion);
 	this.golesMarcados = golesMarcados;
 	this.dorsal = dorsal;
-}
+	}
 
 public Jugador() {
 	super("Maradona", 30, "delantero");
@@ -18,18 +18,19 @@ public Jugador() {
 }
 
 public int compareTo(Object f) {
-	Jugador J = (Jugador)f;
-	return Math.abs(this.getEdad() - J.getEdad());
-}
-
-public boolean jugarConLasManos() {
-	return false;
+	
+	Jugador nuevoJugador = (Jugador)f;
+	return Math.abs(this.getEdad() - nuevoJugador.getEdad());
 }
 
 public String toString() {
 	
-	return 
-	super.toString()+ " con el dorsal " + this.dorsal + ". Ha marcado " + this.golesMarcados;
+	return super.toString() + " con el dorsal " + this.dorsal + ". Ha marcado " + this.golesMarcados;
+}
+
+public boolean jugarConLasManos() {
+	
+	return false;
 }
 
 }
