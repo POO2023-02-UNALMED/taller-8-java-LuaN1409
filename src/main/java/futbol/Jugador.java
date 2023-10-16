@@ -17,7 +17,7 @@ public Jugador() {
 	this.dorsal = 7;
 }
 
-public int compareTo(Object f) {
+public int compareTo(Futbolista f) {
 	
 	Jugador nuevoJugador = (Jugador)f;
 	return Math.abs(this.getEdad() - nuevoJugador.getEdad());
