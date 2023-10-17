@@ -39,7 +39,7 @@ public String toString() {
 
 public int compareTo(Object f) {
 	
-	portero otroPortero = (Portero)f;
+	Portero otroPortero = (Portero)f;
 	return Math.abs(this.getGolesRecibidos() - otroPortero.getGolesRecibidos());
 	
 }

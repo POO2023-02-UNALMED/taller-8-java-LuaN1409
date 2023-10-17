@@ -22,9 +22,6 @@ public String toString() {
 	return "El futbolista " + this.nombre + " tiene " + this.edad +", y juega de " + this.posicion;
 }
 
-public int compareTo(Object f) {
-	return 0;
-}
 
 public boolean equals (Futbolista f, Futbolista g) {
 if (f.nombre.equals(g.nombre) && f.edad == g.edad &&f.posicion.equals(g.posicion)) {
